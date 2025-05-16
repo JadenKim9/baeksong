@@ -197,10 +197,11 @@ export default function Home() {
                 className="h-full w-full"
               >
                 <Image
-                  src="https://img.freepik.com/free-photo/chinese-new-year-still-life-tiger-celebration_23-2149210717.jpg"
+                  src="https://i.imgur.com/sXG48lm.png?v=2"
                   alt="중국 전통 문양"
                   fill
-                  className="object-cover rounded-2xl"
+                  className="object-contain rounded-2xl"
+                  quality={80}
                 />
               </motion.div>
             </motion.div>
