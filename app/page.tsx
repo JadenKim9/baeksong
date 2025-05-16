@@ -122,7 +122,7 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.6 }}
             className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            예술적 가치와 역사적 의미를 보존하고 공유하는 문화 기관
+            백송예술문화원에 오신 것을 환영합니다!
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
