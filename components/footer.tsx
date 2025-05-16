@@ -39,15 +39,26 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 text-gold-500 shrink-0 mt-0.5" />
-                <span>서울특별시 종로구 삼청로 00길 00</span>
+                <a
+                  href="https://www.google.com/maps/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A2%85%EB%A1%9C%EA%B5%AC+%EC%82%BC%EC%B2%AD%EB%A1%9C+00%EA%B8%B8+00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold-400 transition-colors"
+                >
+                  서울특별시 종로구 삼청로 00길 00
+                </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 mr-2 text-gold-500 shrink-0" />
-                <span>02-000-0000</span>
+                <a href="tel:+82-2-000-0000" className="hover:text-gold-400 transition-colors">
+                  02-000-0000
+                </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-2 text-gold-500 shrink-0" />
-                <span>info@baeksong.org</span>
+                <a href="mailto:info@baeksong.org" className="hover:text-gold-400 transition-colors">
+                  info@baeksong.org
+                </a>
               </li>
             </ul>
           </div>

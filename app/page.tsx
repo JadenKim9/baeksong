@@ -110,7 +110,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 tracking-tight"
+            className="text-3xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 tracking-tight"
           >
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-200 to-gold-300">
               중국 전통 예술
@@ -137,7 +137,7 @@ export default function Home() {
           </motion.div>
         </div>
         <motion.div
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10"
+          className="absolute bottom-10 w-full flex justify-center z-10"
           animate={{ y: [0, 10, 0] }}
           transition={{ repeat: Number.POSITIVE_INFINITY, duration: 2 }}
         >

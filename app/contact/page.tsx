@@ -45,8 +45,15 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">주소</h3>
-                    <p className="text-dark-200">
+                    <a
+                      href="https://www.google.com/maps/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A2%85%EB%A1%9C%EA%B5%AC+%EC%82%BC%EC%B2%AD%EB%A1%9C+00%EA%B8%B8+00"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gold-300 underline hover:text-gold-400 transition-colors"
+                    >
                       서울특별시 종로구 삼청로 00길 00
+                    </a>
+                    <p className="text-dark-200">
                       <br />
                       백송예술문화원
                     </p>
@@ -60,7 +67,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">전화</h3>
-                    <p className="text-dark-200">02-000-0000</p>
+                    <a href="tel:+82-2-000-0000" className="text-gold-300 underline hover:text-gold-400 transition-colors">
+                      02-000-0000
+                    </a>
                     <p className="text-dark-300 text-sm mt-2">평일 10:00 - 18:00 (점심시간 12:00 - 13:00)</p>
                   </div>
                 </div>
@@ -71,7 +80,9 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">이메일</h3>
-                    <p className="text-dark-200">info@baeksong.org</p>
+                    <a href="mailto:info@baeksong.org" className="text-gold-300 underline hover:text-gold-400 transition-colors">
+                      info@baeksong.org
+                    </a>
                   </div>
                 </div>
               </div>
