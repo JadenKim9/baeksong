@@ -142,58 +142,66 @@ export default function CollectionsPage() {
             </div>
           ) : (
             <>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                {paged.map((art, idx) => (
-                  <div
-                    key={idx}
-                    className="bg-dark-900 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gold-900/30"
-                    onClick={() => openModal(idx)}
-                  >
-                    {/* Square Thumbnail with black letterbox */}
-                    <div className="relative w-full pb-[100%] bg-black flex items-center justify-center">
-                      <img
-                        src={art.image || "/placeholder.svg"}
-                        alt={art.title}
-                        className="absolute inset-0 object-contain w-full h-full"
-                      />
-                    </div>
-                    <div className="p-4">
-                      <h3 className="text-lg font-medium text-gold-300 truncate">{art.title}</h3>
-                      <p className="text-dark-300 text-sm">{art.description}</p>
-                      <p className="text-dark-300 text-sm mt-1">작가: {art.artist}</p>
-                    </div>
+              {filtered.length === 0 ? (
+                <div className="text-center py-12">
+                  <p className="text-dark-200 text-lg">검색 결과가 없습니다.</p>
+                </div>
+              ) : (
+                <>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {paged.map((art, idx) => (
+                      <div
+                        key={idx}
+                        className="bg-dark-900 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer border border-gold-900/30"
+                        onClick={() => openModal(idx)}
+                      >
+                        {/* Square Thumbnail with black letterbox */}
+                        <div className="relative w-full pb-[100%] bg-black flex items-center justify-center">
+                          <img
+                            src={art.image || "/placeholder.svg"}
+                            alt={art.title}
+                            className="absolute inset-0 object-contain w-full h-full"
+                          />
+                        </div>
+                        <div className="p-4">
+                          <h3 className="text-lg font-medium text-gold-300 truncate">{art.title}</h3>
+                          <p className="text-dark-300 text-sm">{art.description}</p>
+                          <p className="text-dark-300 text-sm mt-1">작가: {art.artist}</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
 
-              {/* Pagination Controls */}
-              <div className="flex justify-center items-center space-x-2 mt-6">
-                <Button
-                  onClick={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
-                  disabled={currentPage === 1}
-                  className="px-3 py-1"
-                >
-                  이전
-                </Button>
-                {Array.from({ length: totalPages }).map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setCurrentPage(i + 1)}
-                    className={`px-3 py-1 rounded ${
-                      currentPage === i + 1 ? "bg-gold-600 text-dark-950" : "bg-dark-800 text-white"
-                    }`}
-                  >
-                    {i + 1}
-                  </button>
-                ))}
-                <Button
-                  onClick={() => currentPage < totalPages && setCurrentPage(currentPage + 1)}
-                  disabled={currentPage === totalPages}
-                  className="px-3 py-1"
-                >
-                  다음
-                </Button>
-              </div>
+                  {/* Pagination Controls */}
+                  <div className="flex justify-center items-center space-x-2 mt-6">
+                    <Button
+                      onClick={() => currentPage > 1 && setCurrentPage(currentPage - 1)}
+                      disabled={currentPage === 1}
+                      className="px-3 py-1"
+                    >
+                      이전
+                    </Button>
+                    {Array.from({ length: totalPages }).map((_, i) => (
+                      <button
+                        key={i}
+                        onClick={() => setCurrentPage(i + 1)}
+                        className={`px-3 py-1 rounded ${
+                          currentPage === i + 1 ? "bg-gold-600 text-dark-950" : "bg-dark-800 text-white"
+                        }`}
+                      >
+                        {i + 1}
+                      </button>
+                    ))}
+                    <Button
+                      onClick={() => currentPage < totalPages && setCurrentPage(currentPage + 1)}
+                      disabled={currentPage === totalPages}
+                      className="px-3 py-1"
+                    >
+                      다음
+                    </Button>
+                  </div>
+                </>
+              )}
             </>
           )}
         </div>
