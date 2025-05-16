@@ -211,19 +211,19 @@ export default function CollectionsPage() {
       {selectedIndex !== null && filtered[selectedIndex] && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80 z-50">
           <div className="relative w-full max-w-6xl bg-dark-900 rounded-lg p-4 border border-gold-900/30">
-            <button onClick={closeModal} className="absolute top-2 right-2 text-white z-50">
-              <X size={32} />
+            <button onClick={closeModal} className="absolute top-2 right-2 text-black border border-white rounded-full p-1.5 z-50 bg-white">
+              <X size={24} />
             </button>
-            <button onClick={prevImage} className="absolute left-2 top-1/2 transform -translate-y-1/2 text-white z-50">
-              <ChevronLeft size={48} />
+            <button onClick={prevImage} className="absolute left-4 top-1/2 transform -translate-y-1/2 text-black border border-white rounded-full p-1.5 z-50 bg-white">
+              <ChevronLeft size={24} />
             </button>
             <img
               src={filtered[selectedIndex].image || "/placeholder.svg"}
               alt={filtered[selectedIndex].title}
               className="object-contain w-full h-auto max-h-[80vh] mx-auto rounded-md"
             />
-            <button onClick={nextImage} className="absolute right-2 top-1/2 transform -translate-y-1/2 text-white z-50">
-              <ChevronRight size={48} />
+            <button onClick={nextImage} className="absolute right-4 top-1/2 transform -translate-y-1/2 text-black border border-white rounded-full p-1.5 z-50 bg-white">
+              <ChevronRight size={24} />
             </button>
             <div className="mt-4 text-center">
               <h3 className="text-2xl font-bold mb-2 text-gold-300">{filtered[selectedIndex].title}</h3>
