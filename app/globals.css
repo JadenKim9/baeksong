@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'BATANG'; /* Tailwind config에서 사용한 이름과 동일해야 함 */
+  src: url('/fonts/BATANG.TTC') format('truetype'); /* public 폴더 기준 경로 및 포맷 */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* 폰트 로딩 방식 설정 (선택 사항) */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

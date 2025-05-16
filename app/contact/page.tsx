@@ -14,7 +14,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[url('https://i.imgur.com/9eUylNW.png')] opacity-10 bg-repeat"></div>
         <div className="container relative z-10 flex justify-center">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold-300 mb-6">Contact Us</h1>
+            <h1 className="text-4xl md:text-5xl font-batang font-bold text-gold-300 mb-6">Contact Us</h1>
             <p className="text-lg text-gold-100/80 leading-relaxed">
               백송예술문화원에 문의하실 내용이 있으시면 언제든지 연락주세요. 방문, 전시, 협업 등 다양한 문의에 친절히
               답변해 드리겠습니다.

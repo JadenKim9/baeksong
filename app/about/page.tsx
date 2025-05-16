@@ -12,7 +12,7 @@ export default function AboutPage() {
         {/* 중국 전통 패턴 배경 */}
         <div className="absolute inset-0 bg-[url('https://i.imgur.com/9eUylNW.png')] opacity-10 bg-repeat"></div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold-300 mb-6">기관소개</h1>
+          <h1 className="text-4xl md:text-5xl font-batang font-bold text-gold-300 mb-6">기관소개</h1>
           <p className="text-lg text-gold-100/80 leading-relaxed max-w-3xl mx-auto">
             백송예술문화원은 중국의 고미술을 보존하고 연구하며 대중에게 소개하는 문화 기관입니다.
             <br />

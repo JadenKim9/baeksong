@@ -80,7 +80,7 @@ const config = {
           900: "#a60000",
           950: "#850000",
         },
-        // 중국 ���통 컬러 - 어두운색 (Dark)
+        // 중국 전통 컬러 - 어두운색 (Dark)
         dark: {
           50: "#f7f7f7",
           100: "#e3e3e3",
@@ -142,6 +142,7 @@ const config = {
       },
       fontFamily: {
         serif: ["var(--font-serif)", "Georgia", "Cambria", "Times New Roman", "Times", "serif"],
+        batang: ["BATANG", "serif"],
       },
      
     },

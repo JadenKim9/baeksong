@@ -110,9 +110,9 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-3xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 tracking-tight"
+            className="text-3xl md:text-6xl lg:text-7xl font-batang font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-200 to-gold-300 mb-6 tracking-tight"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-200 to-gold-300">
+            <span className="">
               중국 전통 예술
             </span>의 아름다움
           </motion.h1>

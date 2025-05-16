@@ -109,7 +109,7 @@ export default function CollectionsPage() {
         {/* 중국 전통 패턴 배경 */}
         <div className="absolute inset-0 bg-[url('https://i.imgur.com/9eUylNW.png')] opacity-10 bg-repeat"></div>
         <div className="container mx-auto text-center relative z-10">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-gold-300 mb-6">소장품</h1>
+          <h1 className="text-4xl md:text-5xl font-batang font-bold text-gold-300 mb-6">소장품</h1>
           <p className="text-lg text-gold-100/80 leading-relaxed max-w-2xl mx-auto">
             백송예술문화원이 소장한 가치 있는 작품들을 만나보세요.
           </p>
