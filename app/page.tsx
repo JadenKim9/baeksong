@@ -88,11 +88,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,215,0,0.15),transparent_70%)]"></div>
         <motion.div style={{ opacity, scale, filter: `blur(${blur}px)` }} className="absolute inset-0 z-0">
           <Image
-            src="https://i.imgur.com/nIiMpeI.jpeg"
+            src="https://i.imgur.com/sCSkKrs.png"
             alt="백송예술문화원"
             fill
             className="object-cover brightness-[0.4] w-full h-full"
             priority
+            quality={100}
+            unoptimized
           />
         </motion.div>
         <div className="container relative z-10 text-center px-4">

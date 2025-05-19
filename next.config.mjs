@@ -15,6 +15,12 @@ const nextConfig = {
       'placeholder.svg'
     ],
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
 };
 
