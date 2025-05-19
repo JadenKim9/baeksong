@@ -53,7 +53,7 @@ export default function Home() {
     fetch("https://opensheet.elk.sh/1xNPAoA5_taqS6I7D7KQak8-X8YXk3fCR3ugBpL58njA/Sheet1")
       .then((res) => res.json())
       .then((data) => {
-        const rows = [12, 13, 14]
+        const rows = [0, 1, 2]  // 처음 3개 작품 선택
         const selected = Array.isArray(data)
           ? data
               .filter((_, idx) => rows.includes(idx))
@@ -88,7 +88,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,215,0,0.15),transparent_70%)]"></div>
         <motion.div style={{ opacity, scale, filter: `blur(${blur}px)` }} className="absolute inset-0 z-0">
           <Image
-            src="https://i.imgur.com/vPSpe2s.png"
+            src="https://i.imgur.com/nIiMpeI.jpeg"
             alt="백송예술문화원"
             fill
             className="object-cover brightness-[0.4] w-full h-full"

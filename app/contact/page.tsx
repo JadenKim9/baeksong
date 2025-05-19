@@ -46,12 +46,13 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">주소</h3>
                     <a
-                      href="https://www.google.com/maps/search/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%A2%85%EB%A1%9C%EA%B5%AC+%EC%82%BC%EC%B2%AD%EB%A1%9C+00%EA%B8%B8+00"
+                      href="https://www.google.com/maps/search/%EC%84%9C%EC%9A%B8%EC%8B%9C+%EC%86%A1%ED%8C%8C%EA%B5%AC+%EB%B0%B1%EC%A0%9C%EA%B3%A0%EB%B6%84%EB%A1%9C+63+%EC%9B%8C%EB%84%88%EC%8A%A4%EC%98%A4%ED%94%BC%EC%8A%A4%ED%85%94+1%EC%B0%A8+1109%ED%98%B8"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gold-300 underline hover:text-gold-400 transition-colors"
                     >
-                      서울특별시 종로구 삼청로 00길 00
+                      서울시 송파구 백제고분로 63<br />
+                      워너스오피스텔 1차 1109호
                     </a>
                     <p className="text-dark-200">
                       <br />
@@ -67,8 +68,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">전화</h3>
-                    <a href="tel:+82-2-000-0000" className="text-gold-300 underline hover:text-gold-400 transition-colors">
-                      02-000-0000
+                    <a href="tel:+82-10-9080-7708" className="text-gold-300 underline hover:text-gold-400 transition-colors">
+                      010-9080-7708
                     </a>
                     <p className="text-dark-300 text-sm mt-2">평일 10:00 - 18:00 (점심시간 12:00 - 13:00)</p>
                   </div>
@@ -80,8 +81,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-medium text-gold-300 mb-2">이메일</h3>
-                    <a href="mailto:info@baeksong.org" className="text-gold-300 underline hover:text-gold-400 transition-colors">
-                      info@baeksong.org
+                    <a href="mailto:ryr0106@hanmail.net" className="text-gold-300 underline hover:text-gold-400 transition-colors">
+                      ryr0106@hanmail.net
                     </a>
                   </div>
                 </div>

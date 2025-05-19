@@ -72,7 +72,7 @@ export default function AboutPage() {
             <div className="flex justify-center md:justify-center">
               <div className="relative w-[300px] h-[400px]">
                 <Image
-                  src="https://i.imgur.com/fEbfM32.jpeg"
+                  src="https://i.imgur.com/vvDlzB2.jpeg"
                   alt="오한웅 원장"
                   fill
                   className="rounded-lg object-cover border border-gold-900/30"
