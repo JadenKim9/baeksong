@@ -110,7 +110,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-3xl md:text-6xl lg:text-7xl font-batang font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-200 to-gold-300 mb-6 tracking-tight"
+            className="text-2xl md:text-5xl lg:text-6xl font-batang font-bold text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-200 to-gold-300 mb-6 tracking-tight"
           >
             <span className="">
               중국 전통 예술
@@ -120,7 +120,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
-            className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed"
+            className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed"
           >
             예술적 가치와 역사적 의미를 보존하고 공유하는 문화 기관
           </motion.p>
@@ -146,8 +146,8 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-dark-900/90 -z-10"></div>
+      <section id="about" className="py-16 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-950/90 to-dark-900/90 -z-10"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,215,0,0.1),transparent_70%)] -z-10"></div>
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -180,37 +180,12 @@ export default function Home() {
                 </Link>
               </div>
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="relative h-[400px] md:h-[500px] overflow-hidden rounded-2xl shadow-2xl"
-            >
-              <div className="absolute inset-0 bg-dark-950/20 backdrop-blur-[1px] rounded-2xl z-10"></div>
-              <div className="absolute inset-0 border border-gold-500/10 rounded-2xl z-20"></div>
-              <motion.div
-                initial={{ scale: 1.1 }}
-                whileInView={{ scale: 1 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true }}
-                className="h-full w-full"
-              >
-                <Image
-                  src="https://i.imgur.com/sXG48lm.png?v=2"
-                  alt="중국 전통 문양"
-                  fill
-                  className="object-contain rounded-2xl"
-                  quality={80}
-                />
-              </motion.div>
-            </motion.div>
           </div>
         </div>
       </section>
 
       {/* Featured Collections */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/90 to-dark-950/90 -z-10"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,215,0,0.1),transparent_70%)] -z-10"></div>
         <div className="container relative z-10 px-4">
