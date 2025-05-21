@@ -165,8 +165,8 @@ export default function CollectionsPage() {
                         </div>
                         <div className="p-4">
                           <h3 className="text-lg font-medium text-gold-300 truncate">{art.title}</h3>
+                          <p className="text-dark-300 text-lg">{art.artist}</p>
                           <p className="text-dark-300 text-sm">{art.description}</p>
-                          <p className="text-dark-300 text-sm mt-1">작가: {art.artist}</p>
                         </div>
                       </div>
                     ))}
@@ -184,7 +184,10 @@ export default function CollectionsPage() {
                     {Array.from({ length: totalPages }).map((_, i) => (
                       <button
                         key={i}
-                        onClick={() => setCurrentPage(i + 1)}
+                        onClick={() => {
+                          setCurrentPage(i + 1);
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }}
                         className={`px-3 py-1 rounded ${
                           currentPage === i + 1 ? "bg-gold-600 text-dark-950" : "bg-dark-800 text-white"
                         }`}
@@ -227,8 +230,8 @@ export default function CollectionsPage() {
             </button>
             <div className="mt-4 text-center">
               <h3 className="text-2xl font-bold mb-2 text-gold-300">{filtered[selectedIndex].title}</h3>
-              <p className="text-sm text-gray-300">{filtered[selectedIndex].description}</p>
-              <p className="text-sm text-gray-300 mt-1">작가: {filtered[selectedIndex].artist}</p>
+              <p className="text-lg text-gray-300">{filtered[selectedIndex].artist}</p>
+              <p className="text-sm text-gray-300 mt-1">{filtered[selectedIndex].description}</p>
             </div>
           </div>
         </div>

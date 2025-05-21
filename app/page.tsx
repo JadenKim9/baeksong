@@ -233,8 +233,8 @@ export default function Home() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-serif font-bold text-white mb-2 group-hover:text-gold-300 transition-colors">{art.title}</h3>
-                  <p className="text-dark-300">{art.period || art.description}</p>
-                  <p className="text-dark-300 text-sm mb-4">작가: {art.artist}</p>
+                  <p className="text-dark-300 text-lg">{art.artist}</p>
+                  <p className="text-dark-300 text-sm mb-4">{art.period || art.description}</p>
                   <button
                     onClick={() => openArtworkModal(art)}
                     className="inline-flex items-center text-gold-400 hover:text-gold-300 font-medium group"
@@ -279,8 +279,8 @@ export default function Home() {
               </div>
               <div className="p-8 bg-gradient-to-b from-dark-900/90 to-dark-950/90 backdrop-blur-sm">
                 <h2 className="text-3xl font-serif font-bold text-white mb-3">{selectedArtwork.title}</h2>
-                <p className="text-dark-300 text-lg">{selectedArtwork.period || selectedArtwork.description}</p>
-                <p className="text-dark-300 mt-2 text-lg">작가: {selectedArtwork.artist}</p>
+                <p className="text-dark-300 text-xl">{selectedArtwork.artist}</p>
+                <p className="text-dark-300 mt-2 text-lg">{selectedArtwork.period || selectedArtwork.description}</p>
               </div>
             </div>
           </motion.div>
